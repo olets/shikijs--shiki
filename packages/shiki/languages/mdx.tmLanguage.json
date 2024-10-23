@@ -1,7 +1,6 @@
 {
-  "name": "mdx",
-  "uuid": "fe65e2cd-7c73-4a27-8b5e-5902893626aa",
   "fileTypes": ["mdx"],
+  "name": "mdx",
   "patterns": [
     {
       "include": "#markdown-frontmatter"
@@ -427,7 +426,7 @@
             }
           },
           "contentName": "markup.raw.code.fenced.mdx",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -458,7 +457,7 @@
             }
           },
           "contentName": "markup.raw.code.fenced.mdx",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -1398,7 +1397,7 @@
           "name": "markup.list.table-delimiter.mdx"
         }
       ],
-      "end": "^(?=[\\t ]*$)"
+      "end": "^(?=[\\t ]*$)|$"
     },
     "extension-github-gemoji": {
       "match": "(:)((?:(?:(?:hand_with_index_finger_and_thumb_cros|mailbox_clo|fist_rai|confu)s|r(?:aised_hand_with_fingers_splay|e(?:gister|l(?:iev|ax)))|disappointed_reliev|confound|(?:a(?:ston|ngu)i|flu)sh|unamus|hush)e|(?:chart_with_(?:down|up)wards_tre|large_orange_diamo|small_(?:orang|blu)e_diamo|large_blue_diamo|parasol_on_grou|loud_sou|rewi)n|(?:rightwards_pushing_h|hourglass_flowing_s|leftwards_(?:pushing_)?h|(?:raised_back_of|palm_(?:down|up)|call_me)_h|(?:(?:(?:clippert|ascensi)on|norfolk)_is|christmas_is|desert_is|bouvet_is|new_zea|thai|eng|fin|ire)l|rightwards_h|pinching_h|writing_h|s(?:w(?:itzer|azi)|cot)l|magic_w|ok_h|icel)an|s(?:un_behind_(?:large|small|rain)_clou|hallow_pan_of_foo|tar_of_davi|leeping_be|kateboar|a(?:tisfie|uropo)|hiel|oun|qui)|(?:ear_with_hearing_a|pouring_liqu)i|(?:identification_c|(?:arrow_(?:back|for)|fast_for)w|credit_c|woman_be|biohaz|man_be|l(?:eop|iz))ar|m(?:usical_key|ortar_)boar|(?:drop_of_bl|canned_f)oo|c(?:apital_abc|upi)|person_bal|(?:black_bi|(?:cust|plac)a)r|(?:clip|key)boar|mermai|pea_po|worrie|po(?:la|u)n|threa|dv)d|(?:(?:(?:face_with_open_eyes_and_hand_over|face_with_diagonal|open|no)_mou|h(?:and_over_mou|yacin)|mammo)t|running_shirt_with_sas|(?:(?:fishing_pole_and_|blow)fi|(?:tropical_f|petri_d)i|(?:paint|tooth)bru|banglade|jellyfi)s|(?:camera_fl|wavy_d)as|triump|menora|pouc|blus|watc|das|has)h|(?:s(?:o(?:(?:uth_georgia_south_sandwich|lomon)_island|ck)|miling_face_with_three_heart|t_kitts_nevi|weat_drop|agittariu|c(?:orpiu|issor)|ymbol|hort)|twisted_rightwards_arrow|(?:northern_mariana|heard_mcdonald|(?:british_virgi|us_virgi|pitcair|cayma)n|turks_caicos|us_outlying|(?:falk|a)land|marshall|c(?:anary|ocos)|faroe)_island|(?:face_holding_back_tea|(?:c(?:ard_index_divid|rossed_fing)|pinched_fing)e|night_with_sta)r|(?:two_(?:wo)?men_holding|people_holding|heart|open)_hand|(?:sunrise_over_mountai|(?:congratul|united_n)atio|jea)n|(?:caribbean_)?netherland|(?:f(?:lower_playing_car|ace_in_clou)|crossed_swor|prayer_bea)d|(?:money_with_win|nest_with_eg|crossed_fla|hotsprin)g|revolving_heart|(?:high_brightne|(?:expression|wire)le|(?:tumbler|wine)_gla|milk_gla|compa|dre)s|performing_art|earth_america|orthodox_cros|l(?:ow_brightnes|a(?:tin_cros|o)|ung)|no_pedestrian|c(?:ontrol_kno|lu)b|b(?:ookmark_tab|rick|ean)|nesting_doll|cook_island|(?:fleur_de_l|tenn)i|(?:o(?:ncoming_b|phiuch|ctop)|hi(?:ppopotam|bisc)|trolleyb|m(?:(?:rs|x)_cla|auriti|inib)|belar|cact|abac|(?:cyp|tau)r)u|medal_sport|(?:chopstic|firewor)k|rhinocero|(?:p(?:aw_prin|eanu)|footprin)t|two_heart|princes|(?:hondur|baham)a|barbado|aquariu|c(?:ustom|hain)|maraca|comoro|flag|wale|hug|vh)s|(?:(?:diamond_shape_with_a_dot_ins|playground_sl)id|(?:(?:first_quarter|last_quarter|full|new)_moon_with|(?:zipper|money)_mouth|dotted_line|upside_down|c(?:rying_c|owboy_h)at|(?:disguis|nauseat)ed|neutral|monocle|panda|tired|woozy|clown|nerd|zany|fox)_fac|s(?:t(?:uck_out_tongue_winking_ey|eam_locomotiv)|(?:lightly_(?:frown|smil)|neez|h(?:ush|ak))ing_fac|(?:tudio_micropho|(?:hinto_shr|lot_mach)i|ierra_leo|axopho)n|mall_airplan|un_with_fac|a(?:luting_fac|tellit|k)|haved_ic|y(?:nagogu|ring)|n(?:owfl)?ak|urinam|pong)|(?:black_(?:medium_)?small|white_(?:(?:medium_)?small|large)|(?:black|white)_medium|black_large|orange|purple|yellow|b(?:rown|lue)|red)_squar|(?:(?:perso|woma)n_with_|man_with_)?probing_can|(?:p(?:ut_litter_in_its_pl|outing_f)|frowning_f|cold_f|wind_f|hot_f)ac|(?:arrows_c(?:ounterc)?lockwi|computer_mou|derelict_hou|carousel_hor|c(?:ity_sunri|hee)|heartpul|briefca|racehor|pig_no|lacros)s|(?:(?:face_with_head_band|ideograph_advant|adhesive_band|under|pack)a|currency_exchan|l(?:eft_l)?ugga|woman_jud|name_bad|man_jud|jud)g|face_with_peeking_ey|(?:(?:e(?:uropean_post_off|ar_of_r)|post_off)i|information_sour|ambulan)c|artificial_satellit|(?:busts?_in_silhouet|(?:vulcan_sal|parach)u|m(?:usical_no|ayot)|ro(?:ller_ska|set)|timor_les|ice_ska)t|(?:(?:incoming|red)_envelo|s(?:ao_tome_princi|tethosco)|(?:micro|tele)sco|citysca)p|(?:(?:(?:convenience|department)_st|musical_sc)o|f(?:light_depar|ramed_pic)tu|love_you_gestu|heart_on_fi|japanese_og|cote_divoi|perseve|singapo)r|b(?:ullettrain_sid|eliz|on)|(?:(?:female_|male_)?dete|radioa)ctiv|(?:christmas|deciduous|evergreen|tanabata|palm)_tre|(?:vibration_mo|cape_ver)d|(?:fortune_cook|neckt|self)i|(?:fork_and_)?knif|athletic_sho|(?:p(?:lead|arty)|drool|curs|melt|yawn|ly)ing_fac|vomiting_fac|(?:(?:c(?:urling_st|ycl)|meat_on_b|repeat_|headst)o|(?:fire_eng|tanger|ukra)i|rice_sce|(?:micro|i)pho|champag|pho)n|(?:cricket|video)_gam|(?:boxing_glo|oli)v|(?:d(?:ragon|izzy)|monkey)_fac|(?:m(?:artin|ozamb)iq|fond)u|wind_chim|test_tub|flat_sho|m(?:a(?:ns_sho|t)|icrob|oos|ut)|(?:handsh|fish_c|moon_c|cupc)ak|nail_car|zimbabw|ho(?:neybe|l)|ice_cub|airplan|pensiv|c(?:a(?:n(?:dl|o)|k)|o(?:ffe|oki))|tongu|purs|f(?:lut|iv)|d(?:at|ov)|n(?:iu|os)|kit|rag|ax)e|(?:(?:british_indian_ocean_territo|(?:plate_with_cutl|batt)e|medal_milita|low_batte|hunga|wea)r|family_(?:woman_(?:woman_(?:girl|boy)|girl|boy)|man_(?:woman_(?:girl|boy)|man_(?:girl|boy)|girl|boy))_bo|person_feeding_bab|woman_feeding_bab|s(?:u(?:spension_railwa|nn)|t(?:atue_of_libert|_barthelem|rawberr))|(?:m(?:ountain_cable|ilky_)|aerial_tram)wa|articulated_lorr|man_feeding_bab|mountain_railwa|partly_sunn|(?:vatican_c|infin)it|(?:outbox_tr|inbox_tr|birthd|motorw|paragu|urugu|norw|x_r)a|butterfl|ring_buo|t(?:urke|roph)|angr|fogg)y|(?:(?:perso|woma)n_in_motorized_wheelchai|(?:(?:notebook_with_decorative_c|four_leaf_cl)ov|(?:index_pointing_at_the_vie|white_flo)w|(?:face_with_thermome|non\\-potable_wa|woman_firefigh|desktop_compu|m(?:an_firefigh|otor_scoo)|(?:ro(?:ller_coa|o)|oy)s|potable_wa|kick_scoo|thermome|firefigh|helicop|ot)t|(?:woman_factory_wor|(?:woman_office|woman_health|health)_wor|man_(?:factory|office|health)_wor|(?:factory|office)_wor|rice_crac|black_jo|firecrac)k|telephone_receiv|(?:palms_up_toget|f(?:ire_extinguis|eat)|teac)h|(?:(?:open_)?file_fol|level_sli)d|police_offic|f(?:lying_sauc|arm)|woman_teach|roll_of_pap|(?:m(?:iddle_f|an_s)in|woman_sin|hambur|plun|dag)g|do_not_litt|wilted_flow|woman_farm|man_(?:teach|farm)|(?:bell_pe|hot_pe|fli)pp|l(?:o(?:udspeak|ve_lett|bst)|edg|add)|tokyo_tow|c(?:ucumb|lapp|anc)|b(?:e(?:ginn|av)|adg)|print|hamst)e|(?:perso|woma)n_in_manual_wheelchai|m(?:an(?:_in_motorized|(?:_in_man)?ual)|otorized)_wheelchai|(?:person_(?:white|curly|red)_|wheelc)hai|triangular_rule|(?:film_project|e(?:l_salv|cu)ad|elevat|tract|anch)o|s(?:traight_rul|pace_invad|crewdriv|nowboard|unflow|peak|wimm|ing|occ|how|urf|ki)e|r(?:ed_ca|unne|azo)|d(?:o(?:lla|o)|ee)|barbe)r|(?:(?:cloud_with_(?:lightning_and_)?ra|japanese_gobl|round_pushp|liechtenste|mandar|pengu|dolph|bahra|pushp|viol)i|(?:couple(?:_with_heart_wo|kiss_)man|construction_worker|(?:mountain_bik|bow|row)ing|lotus_position|(?:w(?:eight_lift|alk)|climb)ing|white_haired|curly_haired|raising_hand|super(?:villain|hero)|red_haired|basketball|s(?:(?:wimm|urf)ing|assy)|haircut|no_good|(?:vampir|massag)e|b(?:iking|ald)|zombie|fairy|mage|elf|ng)_(?:wo)?ma|(?:(?:couple_with_heart_man|isle_of)_m|(?:couplekiss_woman_|(?:b(?:ouncing_ball|lond_haired)|tipping_hand|pregnant|kneeling|deaf)_|frowning_|s(?:tanding|auna)_|po(?:uting_|lice)|running_|blonde_|o(?:lder|k)_)wom|(?:perso|woma)n_with_turb|(?:b(?:ouncing_ball|lond_haired)|tipping_hand|pregnant|kneeling|deaf)_m|f(?:olding_hand_f|rowning_m)|man_with_turb|(?:turkmen|afghan|pak)ist|s(?:tanding_m|(?:outh_s)?ud|auna_m)|po(?:uting_|lice)m|running_m|azerbaij|k(?:yrgyz|azakh)st|tajikist|uzbekist|o(?:lder_m|k_m|ce)|(?:orang|bh)ut|taiw|jord)a|s(?:mall_red_triangle_dow|(?:valbard_jan_may|int_maart|ev)e|afety_pi|top_sig|t_marti|(?:corpi|po|o)o|wede)|(?:heavy_(?:d(?:ivision|ollar)|equals|minus|plus)|no_entry|female|male)_sig|(?:arrow_(?:heading|double)_d|p(?:erson_with_cr|oint_d)|arrow_up_d|thumbsd)ow|(?:house_with_gard|l(?:ock_with_ink_p|eafy_gre)|dancing_(?:wo)?m|fountain_p|keycap_t|chick|ali|yem|od)e|(?:izakaya|jack_o)_lanter|(?:funeral_u|(?:po(?:stal_h|pc)|capric)o|unico)r|chess_paw|b(?:a(?:llo|c)o|eni|rai)|l(?:anter|io)|c(?:o(?:ff)?i|row)|melo|rame|oma|yar)n|(?:s(?:t(?:uck_out_tongue_closed_ey|_vincent_grenadin)|kull_and_crossbon|unglass|pad)|(?:french_souther|palestinia)n_territori|(?:face_with_spiral|kissing_smiling)_ey|united_arab_emirat|kissing_closed_ey|(?:clinking_|dark_sun|eye)glass|(?:no_mobile_|head)phon|womans_cloth|b(?:allet_sho|lueberri)|philippin|(?:no_bicyc|seychel)l|roll_ey|(?:cher|a)ri|p(?:ancak|isc)|maldiv|leav)es|(?:f(?:amily_(?:woman_(?:woman_)?|man_(?:woman_|man_)?)girl_gir|earfu)|(?:woman_playing_hand|m(?:an_playing_hand|irror_)|c(?:onfetti|rystal)_|volley|track|base|8)bal|(?:(?:m(?:ailbox_with_(?:no_)?m|onor)|cockt|e\\-m)a|(?:person|bride|woman)_with_ve|man_with_ve|light_ra|braz|ema)i|(?:transgender|baby)_symbo|passport_contro|(?:arrow_(?:down|up)_sm|rice_b|footb)al|(?:dromedary_cam|ferris_whe|love_hot|high_he|pretz|falaf|isra)e|page_with_cur|me(?:dical_symbo|ta)|(?:n(?:ewspaper_ro|o_be)|bellhop_be)l|rugby_footbal|s(?:chool_satche|(?:peak|ee)_no_evi|oftbal|crol|anda|nai|hel)|(?:peace|atom)_symbo|hear_no_evi|cora|hote|bage|labe|rof|ow)l|(?:(?:negative_squared_cross|heavy_exclamation|part_alternation)_mar|(?:eight_spoked_)?asteris|(?:ballot_box_with_che|(?:(?:mantelpiece|alarm|timer)_c|un)lo|(?:ha(?:(?:mmer_and|ir)_p|tch(?:ing|ed)_ch)|baby_ch|joyst)i|railway_tra|lipsti|peaco)c|heavy_check_mar|white_check_mar|tr(?:opical_drin|uc)|national_par|pickup_truc|diving_mas|floppy_dis|s(?:tar_struc|hamroc|kun|har)|chipmun|denmar|duc|hoo|lin)k|(?:leftwards_arrow_with_h|arrow_right_h|(?:o(?:range|pen)|closed|blue)_b)ook|(?:woman_playing_water_pol|m(?:an(?:_(?:playing_water_pol|with_gua_pi_ma|in_tuxed)|g)|ontenegr|o(?:roc|na)c|e(?:xic|tr|m))|(?:perso|woma)n_in_tuxed|(?:trinidad_toba|vir)g|water_buffal|b(?:urkina_fas|a(?:mbo|nj)|ent)|puerto_ric|water_pol|flaming|kangaro|(?:mosqu|burr)it|(?:avoc|torn)ad|curaca|lesoth|potat|ko(?:sov|k)|tomat|d(?:ang|od)|yo_y|hoch|t(?:ac|og)|zer)o|(?:c(?:entral_african|zech)|dominican)_republic|(?:eight_pointed_black_s|six_pointed_s|qa)tar|(?:business_suit_levitat|(?:classical_buil|breast_fee)d|(?:woman_cartwhee|m(?:an_(?:cartwhee|jugg)|en_wrest)|women_wrest|woman_jugg|face_exha|cartwhee|wrest|dump)l|c(?:hildren_cross|amp)|woman_facepalm|woman_shrugg|man_(?:facepalm|shrugg)|people_hugg|(?:person_fe|woman_da|man_da)nc|fist_oncom|horse_rac|(?:no_smo|thin)k|laugh|s(?:eedl|mok)|park|w(?:arn|edd))ing|f(?:a(?:mily(?:_(?:woman_(?:woman_(?:girl|boy)|girl|boy)|man_(?:woman_(?:girl|boy)|man_(?:girl|boy)|girl|boy)))?|ctory)|o(?:u(?:ntain|r)|ot|g)|r(?:owning)?|i(?:re|s[ht])|ly|u)|(?:(?:(?:information_desk|handball|bearded)_|(?:frowning|ok)_|juggling_|mer)pers|(?:previous_track|p(?:lay_or_p)?ause|black_square|white_square|next_track|r(?:ecord|adio)|eject)_butt|(?:wa[nx]ing_(?:crescent|gibbous)_m|bowl_with_sp|crescent_m|racc)o|(?:b(?:ouncing_ball|lond_haired)|tipping_hand|pregnant|kneeling|deaf)_pers|s(?:t(?:_pierre_miquel|op_butt|ati)|tanding_pers|peech_ballo|auna_pers)|r(?:eminder_r)?ibb|thought_ballo|watermel|badmint|c(?:amero|ray)|le(?:ban|m)|oni|bis)on|(?:heavy_heart_exclama|building_construc|heart_decora|exclama)tion|(?:(?:triangular_flag_on_po|(?:(?:woman_)?technolog|m(?:ountain_bicycl|an_technolog)|bicycl)i|(?:wo)?man_scienti|(?:wo)?man_arti|s(?:afety_ve|cienti)|empty_ne)s|(?:vertical_)?traffic_ligh|(?:rescue_worker_helm|military_helm|nazar_amul|city_suns|wastebask|dropl|t(?:rump|oil)|bouqu|buck|magn|secr)e|one_piece_swimsui|(?:(?:arrow_(?:low|upp)er|point)_r|bridge_at_n|copyr|mag_r)igh|(?:bullettrain_fro|(?:potted_pl|croiss|e(?:ggpl|leph))a)n|s(?:t(?:ar_and_cresc|ud)en|cream_ca|mi(?:ley?|rk)_ca|(?:peed|ail)boa|hir)|(?:arrow_(?:low|upp)er|point)_lef|woman_astronau|r(?:o(?:tating_ligh|cke)|eceip)|heart_eyes_ca|man_astronau|(?:woman_stud|circus_t|man_stud|trid)en|(?:ringed_pla|file_cabi)ne|nut_and_bol|(?:older_)?adul|k(?:i(?:ssing_ca|wi_frui)|uwai|no)|(?:pouting_c|c(?:ut_of_m|old_sw)e|womans_h|montserr|(?:(?:motor_|row)b|lab_c)o|heartbe|toph)a|(?:woman_pil|honey_p|man_pil|[cp]arr|teap|rob)o|hiking_boo|arrow_lef|fist_righ|flashligh|f(?:ist_lef|ee)|black_ca|astronau|(?:c(?:hest|oco)|dough)nu|innocen|joy_ca|artis|(?:acce|egy)p|co(?:me|a)|pilo)t|(?:heavy_multiplication_|t\\-re)x|(?:s(?:miling_face_with_te|piral_calend)|oncoming_police_c|chocolate_b|ra(?:ilway|cing)_c|police_c|polar_be|teddy_be|madagasc|blue_c|calend|myanm)ar|c(?:l(?:o(?:ud(?:_with_lightning)?|ck(?:1[0-2]?|[2-9]))|ap)?|o(?:uple(?:_with_heart|kiss)?|nstruction|mputer|ok|p|w)|a(?:r(?:d_index)?|mera)|r(?:icket|y)|h(?:art|ild))|(?:m(?:artial_arts_unifo|echanical_a)r|(?:cherry_)?blosso|b(?:aggage_clai|roo)|ice_?crea|facepal|mushroo|restroo|vietna|dru|yu)m|(?:woman_with_headscar|m(?:obile_phone_of|aple_lea)|fallen_lea|wol)f|(?:(?:closed_lock_with|old)_|field_hoc|ice_hoc|han|don)key|g(?:lobe_with_meridians|r(?:e(?:y_(?:exclama|ques)tion|e(?:n(?:_(?:square|circle|salad|apple|heart|book)|land)|ce)|y_heart|nada)|i(?:mac|nn)ing|apes)|u(?:inea_bissau|ernsey|am|n)|(?:(?:olfing|enie)_(?:wo)?|uards(?:wo)?)man|(?:inger_roo|oal_ne|hos)t|(?:uadeloup|ame_di|iraff|oos)e|ift_heart|i(?:braltar|rl)|(?:uatemal|(?:eorg|amb)i|orill|uyan|han)a|uide_dog|(?:oggl|lov)es|arlic|emini|uitar|abon|oat|ear|b)|construction_worker|(?:(?:envelope_with|bow_and)_ar|left_right_ar|raised_eyeb)row|(?:(?:oncoming_automob|crocod)i|right_anger_bubb|l(?:eft_speech_bubb|otion_bott|ady_beet)|congo_brazzavil|eye_speech_bubb|(?:large_blue|orange|purple|yellow|brown)_circ|(?:(?:european|japanese)_cas|baby_bot)t|b(?:alance_sca|eet)|s(?:ewing_need|weat_smi)|(?:black|white|red)_circ|(?:motor|re)cyc|pood|turt|tama|waff|musc|eag)le|first_quarter_moon|s(?:m(?:all_red_triangle|i(?:ley?|rk))|t(?:uck_out_tongue|ar)|hopping|leeping|p(?:arkle|ider)|unrise|nowman|chool|cream|k(?:ull|i)|weat|ix|a)|(?:(?:b(?:osnia_herzegovi|ana)|wallis_futu|(?:french_gui|botsw)a|argenti|st_hele)n|(?:(?:equatorial|papua_new)_guin|north_kor|eritr)e|t(?:ristan_da_cunh|ad)|(?:(?:(?:french_poly|indo)ne|tuni)s|(?:new_caledo|ma(?:urita|cedo)|lithua|(?:tanz|alb|rom)a|arme|esto)n|diego_garc|s(?:audi_arab|t_luc|lov(?:ak|en)|omal|erb)|e(?:arth_as|thiop)|m(?:icrone|alay)s|(?:austra|mongo)l|c(?:ambod|roat)|(?:bulga|alge)r|(?:colom|nami|zam)b|boliv|l(?:iber|atv))i|(?:wheel_of_dhar|cine|pana)m|(?:(?:(?:closed|beach|open)_)?umbrel|ceuta_melil|venezue|ang(?:uil|o)|koa)l|c(?:ongo_kinshas|anad|ub)|(?:western_saha|a(?:mpho|ndor)|zeb)r|american_samo|video_camer|m(?:o(?:vie_camer|ldov)|alt|eg)|(?:earth_af|costa_)ric|s(?:outh_afric|ri_lank|a(?:mo|nt))|bubble_te|(?:antarct|jama)ic|ni(?:caragu|geri|nj)|austri|pi(?:nat|zz)|arub|k(?:eny|aab)|indi|u7a7|l(?:lam|ib[ry])|dn)a|l(?:ast_quarter_moon|o(?:tus|ck)|ips|eo)|(?:hammer_and_wren|c(?:ockroa|hur)|facepun|wren|crut|pun)ch|s(?:nowman_with_snow|ignal_strength|weet_potato|miling_imp|p(?:ider_web|arkle[rs])|w(?:im_brief|an)|a(?:n(?:_marino|dwich)|lt)|topwatch|t(?:a(?:dium|r[2s])|ew)|l(?:e(?:epy|d)|oth)|hrimp|yria|carf|(?:hee|oa)p|ea[lt]|h(?:oe|i[pt])|o[bs])|(?:s(?:tuffed_flatbre|p(?:iral_notep|eaking_he))|(?:exploding_h|baguette_br|flatbr)e)ad|(?:arrow_(?:heading|double)_u|(?:p(?:lace_of_wor|assenger_)sh|film_str|tul)i|page_facing_u|biting_li|(?:billed_c|world_m)a|mouse_tra|(?:curly_lo|busst)o|thumbsu|lo(?:llip)?o|clam|im)p|(?:anatomical|light_blue|sparkling|kissing|mending|orange|purple|yellow|broken|b(?:rown|l(?:ack|ue))|pink)_heart|(?:(?:transgender|black)_fla|mechanical_le|(?:checkered|pirate)_fla|electric_plu|rainbow_fla|poultry_le|service_do|white_fla|luxembour|fried_eg|moneyba|h(?:edgeh|otd)o|shru)g|(?:cloud_with|mountain)_snow|(?:(?:antigua_barb|berm)u|(?:kh|ug)an|rwan)da|(?:3r|2n)d_place_medal|1(?:st_place_medal|234|00)|lotus_position|(?:w(?:eight_lift|alk)|climb)ing|(?:(?:cup_with_str|auto_ricksh)a|carpentry_sa|windo|jigsa)w|(?:(?:couch_and|diya)_la|f(?:ried_shri|uelpu))mp|(?:woman_mechan|man_mechan|alemb)ic|(?:european_un|accord|collis|reun)ion|(?:flight_arriv|hospit|portug|seneg|nep)al|card_file_box|(?:(?:oncoming_)?tax|m(?:o(?:unt_fuj|ya)|alaw)|s(?:paghett|ush|ar)|b(?:r(?:occol|une)|urund)|(?:djibou|kiriba)t|hait|fij)i|(?:shopping_c|white_he|bar_ch)art|d(?:isappointed|ominica|e(?:sert)?)|raising_hand|super(?:villain|hero)|b(?:e(?:verage_box|ers|d)|u(?:bbles|lb|g)|i(?:k(?:ini|e)|rd)|o(?:o(?:ks|t)|a[rt]|y)|read|a[cn]k)|ra(?:ised_hands|bbit2|t)|(?:hindu_tem|ap)ple|thong_sandal|a(?:r(?:row_(?:right|down|up)|t)|bc?|nt)?|r(?:a(?:i(?:sed_hand|nbow)|bbit|dio|m)|u(?:nning)?|epeat|i(?:ng|ce)|o(?:ck|se))|takeout_box|(?:flying_|mini)disc|(?:(?:interrob|yin_y)a|b(?:o(?:omera|wli)|angba)|(?:ping_p|hong_k)o|calli|mahjo)ng|b(?:a(?:llot_box|sket|th?|by)|o(?:o(?:k(?:mark)?|m)|w)|u(?:tter|s)|e(?:ll|er?|ar))?|heart_eyes|basketball|(?:paperclip|dancer|ticket)s|point_up_2|(?:wo)?man_cook|n(?:ew(?:spaper)?|o(?:tebook|_entry)|iger)|t(?:e(?:lephone|a)|o(?:oth|p)|r(?:oll)?|wo)|h(?:o(?:u(?:rglass|se)|rse)|a(?:mmer|nd)|eart)|paperclip|full_moon|(?:b(?:lack_ni|athtu|om)|her)b|(?:long|oil)_drum|pineapple|(?:clock(?:1[0-2]?|[2-9])3|u6e8)0|p(?:o(?:int_up|ut)|r(?:ince|ay)|i(?:ck|g)|en)|e(?:nvelope|ight|u(?:ro)?|gg|ar|ye|s)|m(?:o(?:u(?:ntain|se)|nkey|on)|echanic|a(?:ilbox|g|n)|irror)?|new_moon|d(?:iamonds|olls|art)|question|k(?:iss(?:ing)?|ey)|haircut|no_good|(?:vampir|massag)e|g(?:olf(?:ing)?|u(?:inea|ard)|e(?:nie|m)|ift|rin)|h(?:a(?:ndbag|msa)|ouses|earts|ut)|postbox|toolbox|(?:pencil|t(?:rain|iger)|whale|cat|dog)2|belgium|(?:volca|kimo)no|(?:vanuat|tuval|pala|naur|maca)u|tokelau|o(?:range|ne?|m|k)?|office|dancer|ticket|dragon|pencil|zombie|w(?:o(?:mens|rm|od)|ave|in[gk]|c)|m(?:o(?:sque|use2)|e(?:rman|ns)|a(?:li|sk))|jersey|tshirt|w(?:heel|oman)|dizzy|j(?:apan|oy)|t(?:rain|iger)|whale|fairy|a(?:nge[lr]|bcd|tm)|c(?:h(?:a(?:ir|d)|ile)|a(?:ndy|mel)|urry|rab|o(?:rn|ol|w2)|[dn])|p(?:ager|e(?:a(?:ch|r)|ru)|i(?:g2|ll|e)|oop)|n(?:otes|ine)|t(?:onga|hree|ent|ram|[mv])|f(?:erry|r(?:ies|ee|og)|ax)|u(?:7(?:533|981|121)|5(?:5b6|408|272)|6(?:307|70[89]))|mage|e(?:yes|nd)|i(?:ra[nq]|t)|cat|dog|elf|z(?:zz|ap)|yen|j(?:ar|p)|leg|id|u[kps]|ng|o[2x]|vs|kr|[\\+\\x2D]1|x|v)(:)",
@@ -1504,7 +1503,7 @@
     "extension-mdx-esm": {
       "name": "meta.embedded.tsx",
       "begin": "(?:^|\\G)(?=(?i:export|import)[ ])",
-      "end": "^(?=[\\t ]*$)",
+      "end": "^(?=[\\t ]*$)|$",
       "patterns": [
         {
           "include": "source.tsx#statements"
@@ -1512,7 +1511,7 @@
       ]
     },
     "extension-mdx-expression-flow": {
-      "begin": "(?:^|\\G)[\\t ]*(\\{)",
+      "begin": "(?:^|\\G)[\\t ]*(\\{)(?!.*\\}[\\t ]*.)",
       "beginCaptures": {
         "1": {
           "name": "string.other.begin.expression.mdx.js"
@@ -1746,8 +1745,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.apib",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -1756,7 +1754,14 @@
           "name": "markup.code.apib.mdx",
           "patterns": [
             {
-              "include": "text.html.markdown.source.gfm.apib"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.apib",
+              "patterns": [
+                {
+                  "include": "text.html.markdown.source.gfm.apib"
+                }
+              ]
             }
           ]
         },
@@ -1782,8 +1787,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.apib",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -1792,7 +1796,14 @@
           "name": "markup.code.apib.mdx",
           "patterns": [
             {
-              "include": "text.html.markdown.source.gfm.apib"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.apib",
+              "patterns": [
+                {
+                  "include": "text.html.markdown.source.gfm.apib"
+                }
+              ]
             }
           ]
         }
@@ -1822,8 +1833,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.asciidoc",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -1832,7 +1842,14 @@
           "name": "markup.code.asciidoc.mdx",
           "patterns": [
             {
-              "include": "text.html.asciidoc"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.asciidoc",
+              "patterns": [
+                {
+                  "include": "text.html.asciidoc"
+                }
+              ]
             }
           ]
         },
@@ -1858,8 +1875,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.asciidoc",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -1868,7 +1884,14 @@
           "name": "markup.code.asciidoc.mdx",
           "patterns": [
             {
-              "include": "text.html.asciidoc"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.asciidoc",
+              "patterns": [
+                {
+                  "include": "text.html.asciidoc"
+                }
+              ]
             }
           ]
         }
@@ -1898,8 +1921,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.c",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -1908,7 +1930,14 @@
           "name": "markup.code.c.mdx",
           "patterns": [
             {
-              "include": "source.c"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.c",
+              "patterns": [
+                {
+                  "include": "source.c"
+                }
+              ]
             }
           ]
         },
@@ -1934,8 +1963,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.c",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -1944,7 +1972,14 @@
           "name": "markup.code.c.mdx",
           "patterns": [
             {
-              "include": "source.c"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.c",
+              "patterns": [
+                {
+                  "include": "source.c"
+                }
+              ]
             }
           ]
         }
@@ -1974,8 +2009,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.clojure",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -1984,7 +2018,14 @@
           "name": "markup.code.clojure.mdx",
           "patterns": [
             {
-              "include": "source.clojure"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.clojure",
+              "patterns": [
+                {
+                  "include": "source.clojure"
+                }
+              ]
             }
           ]
         },
@@ -2010,8 +2051,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.clojure",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2020,7 +2060,14 @@
           "name": "markup.code.clojure.mdx",
           "patterns": [
             {
-              "include": "source.clojure"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.clojure",
+              "patterns": [
+                {
+                  "include": "source.clojure"
+                }
+              ]
             }
           ]
         }
@@ -2050,8 +2097,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.coffee",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2060,7 +2106,14 @@
           "name": "markup.code.coffee.mdx",
           "patterns": [
             {
-              "include": "source.coffee"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.coffee",
+              "patterns": [
+                {
+                  "include": "source.coffee"
+                }
+              ]
             }
           ]
         },
@@ -2086,8 +2139,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.coffee",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2096,7 +2148,14 @@
           "name": "markup.code.coffee.mdx",
           "patterns": [
             {
-              "include": "source.coffee"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.coffee",
+              "patterns": [
+                {
+                  "include": "source.coffee"
+                }
+              ]
             }
           ]
         }
@@ -2126,8 +2185,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.console",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2136,7 +2194,14 @@
           "name": "markup.code.console.mdx",
           "patterns": [
             {
-              "include": "text.python.console"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.console",
+              "patterns": [
+                {
+                  "include": "text.python.console"
+                }
+              ]
             }
           ]
         },
@@ -2162,8 +2227,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.console",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2172,7 +2236,14 @@
           "name": "markup.code.console.mdx",
           "patterns": [
             {
-              "include": "text.python.console"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.console",
+              "patterns": [
+                {
+                  "include": "text.python.console"
+                }
+              ]
             }
           ]
         }
@@ -2202,8 +2273,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.cpp",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2212,10 +2282,17 @@
           "name": "markup.code.cpp.mdx",
           "patterns": [
             {
-              "include": "source.c++"
-            },
-            {
-              "include": "source.cpp"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.cpp",
+              "patterns": [
+                {
+                  "include": "source.c++"
+                },
+                {
+                  "include": "source.cpp"
+                }
+              ]
             }
           ]
         },
@@ -2241,8 +2318,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.cpp",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2251,10 +2327,17 @@
           "name": "markup.code.cpp.mdx",
           "patterns": [
             {
-              "include": "source.c++"
-            },
-            {
-              "include": "source.cpp"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.cpp",
+              "patterns": [
+                {
+                  "include": "source.c++"
+                },
+                {
+                  "include": "source.cpp"
+                }
+              ]
             }
           ]
         }
@@ -2263,7 +2346,7 @@
     "commonmark-code-fenced-cs": {
       "patterns": [
         {
-          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:beef|c#|cakescript|csharp|(?:.*\\.)?(?:bf|cake|cs|csx|eq|linq|uno)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:beef|c#|cakescript|csharp|(?:.*\\.)?(?:bf|cake|cs|cs\\.pp|csx|eq|linq|uno)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -2284,8 +2367,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.cs",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2294,12 +2376,19 @@
           "name": "markup.code.cs.mdx",
           "patterns": [
             {
-              "include": "source.cs"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.cs",
+              "patterns": [
+                {
+                  "include": "source.cs"
+                }
+              ]
             }
           ]
         },
         {
-          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:beef|c#|cakescript|csharp|(?:.*\\.)?(?:bf|cake|cs|csx|eq|linq|uno)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:beef|c#|cakescript|csharp|(?:.*\\.)?(?:bf|cake|cs|cs\\.pp|csx|eq|linq|uno)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -2320,8 +2409,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.cs",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2330,7 +2418,14 @@
           "name": "markup.code.cs.mdx",
           "patterns": [
             {
-              "include": "source.cs"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.cs",
+              "patterns": [
+                {
+                  "include": "source.cs"
+                }
+              ]
             }
           ]
         }
@@ -2360,8 +2455,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.css",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2370,7 +2464,14 @@
           "name": "markup.code.css.mdx",
           "patterns": [
             {
-              "include": "source.css"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.css",
+              "patterns": [
+                {
+                  "include": "source.css"
+                }
+              ]
             }
           ]
         },
@@ -2396,8 +2497,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.css",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2406,7 +2506,14 @@
           "name": "markup.code.css.mdx",
           "patterns": [
             {
-              "include": "source.css"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.css",
+              "patterns": [
+                {
+                  "include": "source.css"
+                }
+              ]
             }
           ]
         }
@@ -2436,8 +2543,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.diff",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2446,7 +2552,14 @@
           "name": "markup.code.diff.mdx",
           "patterns": [
             {
-              "include": "source.diff"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.diff",
+              "patterns": [
+                {
+                  "include": "source.diff"
+                }
+              ]
             }
           ]
         },
@@ -2472,8 +2585,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.diff",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2482,7 +2594,14 @@
           "name": "markup.code.diff.mdx",
           "patterns": [
             {
-              "include": "source.diff"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.diff",
+              "patterns": [
+                {
+                  "include": "source.diff"
+                }
+              ]
             }
           ]
         }
@@ -2512,8 +2631,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.dockerfile",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2522,7 +2640,14 @@
           "name": "markup.code.dockerfile.mdx",
           "patterns": [
             {
-              "include": "source.dockerfile"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.dockerfile",
+              "patterns": [
+                {
+                  "include": "source.dockerfile"
+                }
+              ]
             }
           ]
         },
@@ -2548,8 +2673,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.dockerfile",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2558,7 +2682,14 @@
           "name": "markup.code.dockerfile.mdx",
           "patterns": [
             {
-              "include": "source.dockerfile"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.dockerfile",
+              "patterns": [
+                {
+                  "include": "source.dockerfile"
+                }
+              ]
             }
           ]
         }
@@ -2588,8 +2719,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.elixir",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2598,7 +2728,14 @@
           "name": "markup.code.elixir.mdx",
           "patterns": [
             {
-              "include": "source.elixir"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.elixir",
+              "patterns": [
+                {
+                  "include": "source.elixir"
+                }
+              ]
             }
           ]
         },
@@ -2624,8 +2761,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.elixir",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2634,7 +2770,14 @@
           "name": "markup.code.elixir.mdx",
           "patterns": [
             {
-              "include": "source.elixir"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.elixir",
+              "patterns": [
+                {
+                  "include": "source.elixir"
+                }
+              ]
             }
           ]
         }
@@ -2664,8 +2807,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.elm",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2674,7 +2816,14 @@
           "name": "markup.code.elm.mdx",
           "patterns": [
             {
-              "include": "source.elm"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.elm",
+              "patterns": [
+                {
+                  "include": "source.elm"
+                }
+              ]
             }
           ]
         },
@@ -2700,8 +2849,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.elm",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2710,7 +2858,14 @@
           "name": "markup.code.elm.mdx",
           "patterns": [
             {
-              "include": "source.elm"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.elm",
+              "patterns": [
+                {
+                  "include": "source.elm"
+                }
+              ]
             }
           ]
         }
@@ -2740,8 +2895,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.erlang",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2750,7 +2904,14 @@
           "name": "markup.code.erlang.mdx",
           "patterns": [
             {
-              "include": "source.erlang"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.erlang",
+              "patterns": [
+                {
+                  "include": "source.erlang"
+                }
+              ]
             }
           ]
         },
@@ -2776,8 +2937,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.erlang",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2786,7 +2946,14 @@
           "name": "markup.code.erlang.mdx",
           "patterns": [
             {
-              "include": "source.erlang"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.erlang",
+              "patterns": [
+                {
+                  "include": "source.erlang"
+                }
+              ]
             }
           ]
         }
@@ -2816,8 +2983,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.gitconfig",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2826,7 +2992,14 @@
           "name": "markup.code.gitconfig.mdx",
           "patterns": [
             {
-              "include": "source.gitconfig"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.gitconfig",
+              "patterns": [
+                {
+                  "include": "source.gitconfig"
+                }
+              ]
             }
           ]
         },
@@ -2852,8 +3025,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.gitconfig",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2862,7 +3034,14 @@
           "name": "markup.code.gitconfig.mdx",
           "patterns": [
             {
-              "include": "source.gitconfig"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.gitconfig",
+              "patterns": [
+                {
+                  "include": "source.gitconfig"
+                }
+              ]
             }
           ]
         }
@@ -2892,8 +3071,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.go",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2902,7 +3080,14 @@
           "name": "markup.code.go.mdx",
           "patterns": [
             {
-              "include": "source.go"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.go",
+              "patterns": [
+                {
+                  "include": "source.go"
+                }
+              ]
             }
           ]
         },
@@ -2928,8 +3113,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.go",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2938,7 +3122,14 @@
           "name": "markup.code.go.mdx",
           "patterns": [
             {
-              "include": "source.go"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.go",
+              "patterns": [
+                {
+                  "include": "source.go"
+                }
+              ]
             }
           ]
         }
@@ -2968,8 +3159,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.graphql",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -2978,7 +3168,14 @@
           "name": "markup.code.graphql.mdx",
           "patterns": [
             {
-              "include": "source.graphql"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.graphql",
+              "patterns": [
+                {
+                  "include": "source.graphql"
+                }
+              ]
             }
           ]
         },
@@ -3004,8 +3201,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.graphql",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3014,7 +3210,14 @@
           "name": "markup.code.graphql.mdx",
           "patterns": [
             {
-              "include": "source.graphql"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.graphql",
+              "patterns": [
+                {
+                  "include": "source.graphql"
+                }
+              ]
             }
           ]
         }
@@ -3023,7 +3226,7 @@
     "commonmark-code-fenced-haskell": {
       "patterns": [
         {
-          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:bh|bluespec\\x2dbh|bluespec\\x2dclassic|c2hs|c2hs\\x2dhaskell|frege|haskell|(?:.*\\.)?(?:chs|dhall|hs|hs\\x2dboot|hsc)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:c2hs|c2hs\\x2dhaskell|frege|haskell|(?:.*\\.)?(?:chs|dhall|hs|hs\\x2dboot|hsc)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -3044,8 +3247,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.haskell",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3054,12 +3256,19 @@
           "name": "markup.code.haskell.mdx",
           "patterns": [
             {
-              "include": "source.haskell"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.haskell",
+              "patterns": [
+                {
+                  "include": "source.haskell"
+                }
+              ]
             }
           ]
         },
         {
-          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:bh|bluespec\\x2dbh|bluespec\\x2dclassic|c2hs|c2hs\\x2dhaskell|frege|haskell|(?:.*\\.)?(?:chs|dhall|hs|hs\\x2dboot|hsc)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:c2hs|c2hs\\x2dhaskell|frege|haskell|(?:.*\\.)?(?:chs|dhall|hs|hs\\x2dboot|hsc)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -3080,8 +3289,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.haskell",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3090,7 +3298,14 @@
           "name": "markup.code.haskell.mdx",
           "patterns": [
             {
-              "include": "source.haskell"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.haskell",
+              "patterns": [
+                {
+                  "include": "source.haskell"
+                }
+              ]
             }
           ]
         }
@@ -3120,8 +3335,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.html",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3130,7 +3344,14 @@
           "name": "markup.code.html.mdx",
           "patterns": [
             {
-              "include": "text.html.basic"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.html",
+              "patterns": [
+                {
+                  "include": "text.html.basic"
+                }
+              ]
             }
           ]
         },
@@ -3156,8 +3377,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.html",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3166,7 +3386,14 @@
           "name": "markup.code.html.mdx",
           "patterns": [
             {
-              "include": "text.html.basic"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.html",
+              "patterns": [
+                {
+                  "include": "text.html.basic"
+                }
+              ]
             }
           ]
         }
@@ -3196,8 +3423,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.ini",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3206,7 +3432,14 @@
           "name": "markup.code.ini.mdx",
           "patterns": [
             {
-              "include": "source.ini"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.ini",
+              "patterns": [
+                {
+                  "include": "source.ini"
+                }
+              ]
             }
           ]
         },
@@ -3232,8 +3465,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.ini",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3242,7 +3474,14 @@
           "name": "markup.code.ini.mdx",
           "patterns": [
             {
-              "include": "source.ini"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.ini",
+              "patterns": [
+                {
+                  "include": "source.ini"
+                }
+              ]
             }
           ]
         }
@@ -3272,8 +3511,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.java",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3282,7 +3520,14 @@
           "name": "markup.code.java.mdx",
           "patterns": [
             {
-              "include": "source.java"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.java",
+              "patterns": [
+                {
+                  "include": "source.java"
+                }
+              ]
             }
           ]
         },
@@ -3308,8 +3553,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.java",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3318,7 +3562,14 @@
           "name": "markup.code.java.mdx",
           "patterns": [
             {
-              "include": "source.java"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.java",
+              "patterns": [
+                {
+                  "include": "source.java"
+                }
+              ]
             }
           ]
         }
@@ -3327,7 +3578,7 @@
     "commonmark-code-fenced-js": {
       "patterns": [
         {
-          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:cycript|javascript\\+erb|json\\x2dwith\\x2dcomments|node|qt\\x2dscript|(?:.*\\.)?(?:_js|bones|cjs|code\\x2dsnippets|code\\x2dworkspace|cy|es6|jake|javascript|js|js\\.erb|jsb|jscad|jsfl|jslib|jsm|json5|jsonc|jsonld|jspre|jss|jsx|mjs|njs|pac|sjs|ssjs|sublime\\x2dbuild|sublime\\x2dcommands|sublime\\x2dcompletions|sublime\\x2dkeymap|sublime\\x2dmacro|sublime\\x2dmenu|sublime\\x2dmousemap|sublime\\x2dproject|sublime\\x2dsettings|sublime\\x2dtheme|sublime\\x2dworkspace|sublime_metrics|sublime_session|xsjs|xsjslib)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:cycript|javascript\\+erb|json\\x2dwith\\x2dcomments|node|qt\\x2dscript|(?:.*\\.)?(?:_js|bones|cjs|code\\x2dsnippets|code\\x2dworkspace|cy|es6|jake|javascript|js|js\\.erb|jsb|jscad|jsfl|jslib|jsm|json5|jsonc|jsonld|jspre|jss|jsx|mjs|njs|pac|sjs|ssjs|sublime\\x2dbuild|sublime\\x2dcolor\\x2dscheme|sublime\\x2dcommands|sublime\\x2dcompletions|sublime\\x2dkeymap|sublime\\x2dmacro|sublime\\x2dmenu|sublime\\x2dmousemap|sublime\\x2dproject|sublime\\x2dsettings|sublime\\x2dtheme|sublime\\x2dworkspace|sublime_metrics|sublime_session|xsjs|xsjslib)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -3348,8 +3599,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.js",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3358,12 +3608,19 @@
           "name": "markup.code.js.mdx",
           "patterns": [
             {
-              "include": "source.js"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.js",
+              "patterns": [
+                {
+                  "include": "source.js"
+                }
+              ]
             }
           ]
         },
         {
-          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:cycript|javascript\\+erb|json\\x2dwith\\x2dcomments|node|qt\\x2dscript|(?:.*\\.)?(?:_js|bones|cjs|code\\x2dsnippets|code\\x2dworkspace|cy|es6|jake|javascript|js|js\\.erb|jsb|jscad|jsfl|jslib|jsm|json5|jsonc|jsonld|jspre|jss|jsx|mjs|njs|pac|sjs|ssjs|sublime\\x2dbuild|sublime\\x2dcommands|sublime\\x2dcompletions|sublime\\x2dkeymap|sublime\\x2dmacro|sublime\\x2dmenu|sublime\\x2dmousemap|sublime\\x2dproject|sublime\\x2dsettings|sublime\\x2dtheme|sublime\\x2dworkspace|sublime_metrics|sublime_session|xsjs|xsjslib)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:cycript|javascript\\+erb|json\\x2dwith\\x2dcomments|node|qt\\x2dscript|(?:.*\\.)?(?:_js|bones|cjs|code\\x2dsnippets|code\\x2dworkspace|cy|es6|jake|javascript|js|js\\.erb|jsb|jscad|jsfl|jslib|jsm|json5|jsonc|jsonld|jspre|jss|jsx|mjs|njs|pac|sjs|ssjs|sublime\\x2dbuild|sublime\\x2dcolor\\x2dscheme|sublime\\x2dcommands|sublime\\x2dcompletions|sublime\\x2dkeymap|sublime\\x2dmacro|sublime\\x2dmenu|sublime\\x2dmousemap|sublime\\x2dproject|sublime\\x2dsettings|sublime\\x2dtheme|sublime\\x2dworkspace|sublime_metrics|sublime_session|xsjs|xsjslib)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -3384,8 +3641,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.js",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3394,7 +3650,14 @@
           "name": "markup.code.js.mdx",
           "patterns": [
             {
-              "include": "source.js"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.js",
+              "patterns": [
+                {
+                  "include": "source.js"
+                }
+              ]
             }
           ]
         }
@@ -3403,7 +3666,7 @@
     "commonmark-code-fenced-json": {
       "patterns": [
         {
-          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:ecere\\x2dprojects|ipython\\x2dnotebook|jupyter\\x2dnotebook|max|max/msp|maxmsp|oasv2\\x2djson|oasv3\\x2djson|(?:.*\\.)?(?:4dform|4dproject|avsc|epj|geojson|gltf|har|ice|ipynb|json|json|json|json\\x2dtmlanguage|jsonl|maxhelp|maxpat|maxproj|mcmeta|mxt|pat|tfstate|tfstate\\.backup|topojson|webapp|webmanifest|yy|yyp)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:ecere\\x2dprojects|ipython\\x2dnotebook|jupyter\\x2dnotebook|max|max/msp|maxmsp|oasv2\\x2djson|oasv3\\x2djson|(?:.*\\.)?(?:4dform|4dproject|avsc|epj|geojson|gltf|har|ice|ipynb|json|json|json|json\\x2dtmlanguage|jsonl|maxhelp|maxpat|maxproj|mcmeta|mxt|pat|sarif|tfstate|tfstate\\.backup|topojson|webapp|webmanifest|yy|yyp)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -3424,8 +3687,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.json",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3434,12 +3696,19 @@
           "name": "markup.code.json.mdx",
           "patterns": [
             {
-              "include": "source.json"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.json",
+              "patterns": [
+                {
+                  "include": "source.json"
+                }
+              ]
             }
           ]
         },
         {
-          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:ecere\\x2dprojects|ipython\\x2dnotebook|jupyter\\x2dnotebook|max|max/msp|maxmsp|oasv2\\x2djson|oasv3\\x2djson|(?:.*\\.)?(?:4dform|4dproject|avsc|epj|geojson|gltf|har|ice|ipynb|json|json|json|json\\x2dtmlanguage|jsonl|maxhelp|maxpat|maxproj|mcmeta|mxt|pat|tfstate|tfstate\\.backup|topojson|webapp|webmanifest|yy|yyp)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:ecere\\x2dprojects|ipython\\x2dnotebook|jupyter\\x2dnotebook|max|max/msp|maxmsp|oasv2\\x2djson|oasv3\\x2djson|(?:.*\\.)?(?:4dform|4dproject|avsc|epj|geojson|gltf|har|ice|ipynb|json|json|json|json\\x2dtmlanguage|jsonl|maxhelp|maxpat|maxproj|mcmeta|mxt|pat|sarif|tfstate|tfstate\\.backup|topojson|webapp|webmanifest|yy|yyp)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -3460,8 +3729,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.json",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3470,7 +3738,14 @@
           "name": "markup.code.json.mdx",
           "patterns": [
             {
-              "include": "source.json"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.json",
+              "patterns": [
+                {
+                  "include": "source.json"
+                }
+              ]
             }
           ]
         }
@@ -3500,8 +3775,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.julia",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3510,7 +3784,14 @@
           "name": "markup.code.julia.mdx",
           "patterns": [
             {
-              "include": "source.julia"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.julia",
+              "patterns": [
+                {
+                  "include": "source.julia"
+                }
+              ]
             }
           ]
         },
@@ -3536,8 +3817,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.julia",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3546,7 +3826,14 @@
           "name": "markup.code.julia.mdx",
           "patterns": [
             {
-              "include": "source.julia"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.julia",
+              "patterns": [
+                {
+                  "include": "source.julia"
+                }
+              ]
             }
           ]
         }
@@ -3576,8 +3863,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.kotlin",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3586,7 +3872,14 @@
           "name": "markup.code.kotlin.mdx",
           "patterns": [
             {
-              "include": "source.kotlin"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.kotlin",
+              "patterns": [
+                {
+                  "include": "source.kotlin"
+                }
+              ]
             }
           ]
         },
@@ -3612,8 +3905,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.kotlin",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3622,7 +3914,14 @@
           "name": "markup.code.kotlin.mdx",
           "patterns": [
             {
-              "include": "source.kotlin"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.kotlin",
+              "patterns": [
+                {
+                  "include": "source.kotlin"
+                }
+              ]
             }
           ]
         }
@@ -3652,8 +3951,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.less",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3662,7 +3960,14 @@
           "name": "markup.code.less.mdx",
           "patterns": [
             {
-              "include": "source.css.less"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.less",
+              "patterns": [
+                {
+                  "include": "source.css.less"
+                }
+              ]
             }
           ]
         },
@@ -3688,8 +3993,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.less",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3698,7 +4002,14 @@
           "name": "markup.code.less.mdx",
           "patterns": [
             {
-              "include": "source.css.less"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.less",
+              "patterns": [
+                {
+                  "include": "source.css.less"
+                }
+              ]
             }
           ]
         }
@@ -3728,8 +4039,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.lua",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3738,7 +4048,14 @@
           "name": "markup.code.lua.mdx",
           "patterns": [
             {
-              "include": "source.lua"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.lua",
+              "patterns": [
+                {
+                  "include": "source.lua"
+                }
+              ]
             }
           ]
         },
@@ -3764,8 +4081,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.lua",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3774,7 +4090,14 @@
           "name": "markup.code.lua.mdx",
           "patterns": [
             {
-              "include": "source.lua"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.lua",
+              "patterns": [
+                {
+                  "include": "source.lua"
+                }
+              ]
             }
           ]
         }
@@ -3804,8 +4127,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.makefile",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3814,7 +4136,14 @@
           "name": "markup.code.makefile.mdx",
           "patterns": [
             {
-              "include": "source.makefile"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.makefile",
+              "patterns": [
+                {
+                  "include": "source.makefile"
+                }
+              ]
             }
           ]
         },
@@ -3840,8 +4169,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.makefile",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3850,7 +4178,14 @@
           "name": "markup.code.makefile.mdx",
           "patterns": [
             {
-              "include": "source.makefile"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.makefile",
+              "patterns": [
+                {
+                  "include": "source.makefile"
+                }
+              ]
             }
           ]
         }
@@ -3880,8 +4215,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.md",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3890,13 +4224,20 @@
           "name": "markup.code.md.mdx",
           "patterns": [
             {
-              "include": "text.md"
-            },
-            {
-              "include": "source.gfm"
-            },
-            {
-              "include": "text.html.markdown"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.md",
+              "patterns": [
+                {
+                  "include": "text.md"
+                },
+                {
+                  "include": "source.gfm"
+                },
+                {
+                  "include": "text.html.markdown"
+                }
+              ]
             }
           ]
         },
@@ -3922,8 +4263,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.md",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3932,13 +4272,20 @@
           "name": "markup.code.md.mdx",
           "patterns": [
             {
-              "include": "text.md"
-            },
-            {
-              "include": "source.gfm"
-            },
-            {
-              "include": "text.html.markdown"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.md",
+              "patterns": [
+                {
+                  "include": "text.md"
+                },
+                {
+                  "include": "source.gfm"
+                },
+                {
+                  "include": "text.html.markdown"
+                }
+              ]
             }
           ]
         }
@@ -3968,8 +4315,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.mdx",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -3978,7 +4324,14 @@
           "name": "markup.code.mdx.mdx",
           "patterns": [
             {
-              "include": "source.mdx"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.mdx",
+              "patterns": [
+                {
+                  "include": "source.mdx"
+                }
+              ]
             }
           ]
         },
@@ -4004,8 +4357,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.mdx",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4014,7 +4366,14 @@
           "name": "markup.code.mdx.mdx",
           "patterns": [
             {
-              "include": "source.mdx"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.mdx",
+              "patterns": [
+                {
+                  "include": "source.mdx"
+                }
+              ]
             }
           ]
         }
@@ -4044,8 +4403,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.objc",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4054,7 +4412,14 @@
           "name": "markup.code.objc.mdx",
           "patterns": [
             {
-              "include": "source.objc"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.objc",
+              "patterns": [
+                {
+                  "include": "source.objc"
+                }
+              ]
             }
           ]
         },
@@ -4080,8 +4445,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.objc",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4090,7 +4454,14 @@
           "name": "markup.code.objc.mdx",
           "patterns": [
             {
-              "include": "source.objc"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.objc",
+              "patterns": [
+                {
+                  "include": "source.objc"
+                }
+              ]
             }
           ]
         }
@@ -4120,8 +4491,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.perl",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4130,7 +4500,14 @@
           "name": "markup.code.perl.mdx",
           "patterns": [
             {
-              "include": "source.perl"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.perl",
+              "patterns": [
+                {
+                  "include": "source.perl"
+                }
+              ]
             }
           ]
         },
@@ -4156,8 +4533,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.perl",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4166,7 +4542,14 @@
           "name": "markup.code.perl.mdx",
           "patterns": [
             {
-              "include": "source.perl"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.perl",
+              "patterns": [
+                {
+                  "include": "source.perl"
+                }
+              ]
             }
           ]
         }
@@ -4196,8 +4579,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.php",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4206,7 +4588,14 @@
           "name": "markup.code.php.mdx",
           "patterns": [
             {
-              "include": "text.html.php"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.php",
+              "patterns": [
+                {
+                  "include": "text.html.php"
+                }
+              ]
             }
           ]
         },
@@ -4232,8 +4621,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.php",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4242,7 +4630,14 @@
           "name": "markup.code.php.mdx",
           "patterns": [
             {
-              "include": "text.html.php"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.php",
+              "patterns": [
+                {
+                  "include": "text.html.php"
+                }
+              ]
             }
           ]
         }
@@ -4272,8 +4667,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.python",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4282,7 +4676,14 @@
           "name": "markup.code.python.mdx",
           "patterns": [
             {
-              "include": "source.python"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.python",
+              "patterns": [
+                {
+                  "include": "source.python"
+                }
+              ]
             }
           ]
         },
@@ -4308,8 +4709,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.python",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4318,7 +4718,14 @@
           "name": "markup.code.python.mdx",
           "patterns": [
             {
-              "include": "source.python"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.python",
+              "patterns": [
+                {
+                  "include": "source.python"
+                }
+              ]
             }
           ]
         }
@@ -4348,8 +4755,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.r",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4358,7 +4764,14 @@
           "name": "markup.code.r.mdx",
           "patterns": [
             {
-              "include": "source.r"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.r",
+              "patterns": [
+                {
+                  "include": "source.r"
+                }
+              ]
             }
           ]
         },
@@ -4384,8 +4797,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.r",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4394,7 +4806,14 @@
           "name": "markup.code.r.mdx",
           "patterns": [
             {
-              "include": "source.r"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.r",
+              "patterns": [
+                {
+                  "include": "source.r"
+                }
+              ]
             }
           ]
         }
@@ -4424,8 +4843,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.raku",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4434,7 +4852,14 @@
           "name": "markup.code.raku.mdx",
           "patterns": [
             {
-              "include": "source.raku"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.raku",
+              "patterns": [
+                {
+                  "include": "source.raku"
+                }
+              ]
             }
           ]
         },
@@ -4460,8 +4885,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.raku",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4470,7 +4894,14 @@
           "name": "markup.code.raku.mdx",
           "patterns": [
             {
-              "include": "source.raku"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.raku",
+              "patterns": [
+                {
+                  "include": "source.raku"
+                }
+              ]
             }
           ]
         }
@@ -4500,8 +4931,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.ruby",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4510,7 +4940,14 @@
           "name": "markup.code.ruby.mdx",
           "patterns": [
             {
-              "include": "source.ruby"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.ruby",
+              "patterns": [
+                {
+                  "include": "source.ruby"
+                }
+              ]
             }
           ]
         },
@@ -4536,8 +4973,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.ruby",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4546,7 +4982,14 @@
           "name": "markup.code.ruby.mdx",
           "patterns": [
             {
-              "include": "source.ruby"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.ruby",
+              "patterns": [
+                {
+                  "include": "source.ruby"
+                }
+              ]
             }
           ]
         }
@@ -4576,8 +5019,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.rust",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4586,7 +5028,14 @@
           "name": "markup.code.rust.mdx",
           "patterns": [
             {
-              "include": "source.rust"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.rust",
+              "patterns": [
+                {
+                  "include": "source.rust"
+                }
+              ]
             }
           ]
         },
@@ -4612,8 +5061,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.rust",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4622,7 +5070,14 @@
           "name": "markup.code.rust.mdx",
           "patterns": [
             {
-              "include": "source.rust"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.rust",
+              "patterns": [
+                {
+                  "include": "source.rust"
+                }
+              ]
             }
           ]
         }
@@ -4652,8 +5107,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.scala",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4662,7 +5116,14 @@
           "name": "markup.code.scala.mdx",
           "patterns": [
             {
-              "include": "source.scala"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.scala",
+              "patterns": [
+                {
+                  "include": "source.scala"
+                }
+              ]
             }
           ]
         },
@@ -4688,8 +5149,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.scala",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4698,7 +5158,14 @@
           "name": "markup.code.scala.mdx",
           "patterns": [
             {
-              "include": "source.scala"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.scala",
+              "patterns": [
+                {
+                  "include": "source.scala"
+                }
+              ]
             }
           ]
         }
@@ -4728,8 +5195,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.scss",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4738,7 +5204,14 @@
           "name": "markup.code.scss.mdx",
           "patterns": [
             {
-              "include": "source.css.scss"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.scss",
+              "patterns": [
+                {
+                  "include": "source.css.scss"
+                }
+              ]
             }
           ]
         },
@@ -4764,8 +5237,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.scss",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4774,7 +5246,14 @@
           "name": "markup.code.scss.mdx",
           "patterns": [
             {
-              "include": "source.css.scss"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.scss",
+              "patterns": [
+                {
+                  "include": "source.css.scss"
+                }
+              ]
             }
           ]
         }
@@ -4783,7 +5262,7 @@
     "commonmark-code-fenced-shell": {
       "patterns": [
         {
-          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:abuild|alpine\\x2dabuild|apkbuild|gentoo\\x2debuild|gentoo\\x2declass|openrc|openrc\\x2drunscript|shell|shell\\x2dscript|(?:.*\\.)?(?:bash|bats|command|csh|ebuild|eclass|ksh|sh|sh\\.in|tcsh|tmux|tool|zsh|zsh\\x2dtheme)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:abuild|alpine\\x2dabuild|apkbuild|envrc|gentoo\\x2debuild|gentoo\\x2declass|openrc|openrc\\x2drunscript|shell|shell\\x2dscript|(?:.*\\.)?(?:bash|bats|command|csh|ebuild|eclass|ksh|sh|sh\\.in|tcsh|tmux|tool|zsh|zsh\\x2dtheme)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -4804,8 +5283,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.shell",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4814,12 +5292,19 @@
           "name": "markup.code.shell.mdx",
           "patterns": [
             {
-              "include": "source.shell"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.shell",
+              "patterns": [
+                {
+                  "include": "source.shell"
+                }
+              ]
             }
           ]
         },
         {
-          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:abuild|alpine\\x2dabuild|apkbuild|gentoo\\x2debuild|gentoo\\x2declass|openrc|openrc\\x2drunscript|shell|shell\\x2dscript|(?:.*\\.)?(?:bash|bats|command|csh|ebuild|eclass|ksh|sh|sh\\.in|tcsh|tmux|tool|zsh|zsh\\x2dtheme)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:abuild|alpine\\x2dabuild|apkbuild|envrc|gentoo\\x2debuild|gentoo\\x2declass|openrc|openrc\\x2drunscript|shell|shell\\x2dscript|(?:.*\\.)?(?:bash|bats|command|csh|ebuild|eclass|ksh|sh|sh\\.in|tcsh|tmux|tool|zsh|zsh\\x2dtheme)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -4840,8 +5325,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.shell",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4850,7 +5334,14 @@
           "name": "markup.code.shell.mdx",
           "patterns": [
             {
-              "include": "source.shell"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.shell",
+              "patterns": [
+                {
+                  "include": "source.shell"
+                }
+              ]
             }
           ]
         }
@@ -4880,8 +5371,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.shell-session",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4890,7 +5380,14 @@
           "name": "markup.code.shell-session.mdx",
           "patterns": [
             {
-              "include": "text.shell-session"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.shell-session",
+              "patterns": [
+                {
+                  "include": "text.shell-session"
+                }
+              ]
             }
           ]
         },
@@ -4916,8 +5413,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.shell-session",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4926,7 +5422,14 @@
           "name": "markup.code.shell-session.mdx",
           "patterns": [
             {
-              "include": "text.shell-session"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.shell-session",
+              "patterns": [
+                {
+                  "include": "text.shell-session"
+                }
+              ]
             }
           ]
         }
@@ -4956,8 +5459,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.sql",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -4966,7 +5468,14 @@
           "name": "markup.code.sql.mdx",
           "patterns": [
             {
-              "include": "source.sql"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.sql",
+              "patterns": [
+                {
+                  "include": "source.sql"
+                }
+              ]
             }
           ]
         },
@@ -4992,8 +5501,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.sql",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5002,7 +5510,14 @@
           "name": "markup.code.sql.mdx",
           "patterns": [
             {
-              "include": "source.sql"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.sql",
+              "patterns": [
+                {
+                  "include": "source.sql"
+                }
+              ]
             }
           ]
         }
@@ -5032,8 +5547,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.svg",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5042,10 +5556,17 @@
           "name": "markup.code.svg.mdx",
           "patterns": [
             {
-              "include": "text.xml.svg"
-            },
-            {
-              "include": "text.xml"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.svg",
+              "patterns": [
+                {
+                  "include": "text.xml.svg"
+                },
+                {
+                  "include": "text.xml"
+                }
+              ]
             }
           ]
         },
@@ -5071,8 +5592,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.svg",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5081,10 +5601,17 @@
           "name": "markup.code.svg.mdx",
           "patterns": [
             {
-              "include": "text.xml.svg"
-            },
-            {
-              "include": "text.xml"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.svg",
+              "patterns": [
+                {
+                  "include": "text.xml.svg"
+                },
+                {
+                  "include": "text.xml"
+                }
+              ]
             }
           ]
         }
@@ -5114,8 +5641,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.swift",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5124,7 +5650,14 @@
           "name": "markup.code.swift.mdx",
           "patterns": [
             {
-              "include": "source.swift"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.swift",
+              "patterns": [
+                {
+                  "include": "source.swift"
+                }
+              ]
             }
           ]
         },
@@ -5150,8 +5683,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.swift",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5160,7 +5692,14 @@
           "name": "markup.code.swift.mdx",
           "patterns": [
             {
-              "include": "source.swift"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.swift",
+              "patterns": [
+                {
+                  "include": "source.swift"
+                }
+              ]
             }
           ]
         }
@@ -5190,8 +5729,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.toml",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5200,7 +5738,14 @@
           "name": "markup.code.toml.mdx",
           "patterns": [
             {
-              "include": "source.toml"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.toml",
+              "patterns": [
+                {
+                  "include": "source.toml"
+                }
+              ]
             }
           ]
         },
@@ -5226,8 +5771,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.toml",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5236,7 +5780,14 @@
           "name": "markup.code.toml.mdx",
           "patterns": [
             {
-              "include": "source.toml"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.toml",
+              "patterns": [
+                {
+                  "include": "source.toml"
+                }
+              ]
             }
           ]
         }
@@ -5266,8 +5817,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.ts",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5276,7 +5826,14 @@
           "name": "markup.code.ts.mdx",
           "patterns": [
             {
-              "include": "source.ts"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.ts",
+              "patterns": [
+                {
+                  "include": "source.ts"
+                }
+              ]
             }
           ]
         },
@@ -5302,8 +5859,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.ts",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5312,7 +5868,14 @@
           "name": "markup.code.ts.mdx",
           "patterns": [
             {
-              "include": "source.ts"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.ts",
+              "patterns": [
+                {
+                  "include": "source.ts"
+                }
+              ]
             }
           ]
         }
@@ -5342,8 +5905,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.tsx",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5352,7 +5914,14 @@
           "name": "markup.code.tsx.mdx",
           "patterns": [
             {
-              "include": "source.tsx"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.tsx",
+              "patterns": [
+                {
+                  "include": "source.tsx"
+                }
+              ]
             }
           ]
         },
@@ -5378,8 +5947,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.tsx",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5388,7 +5956,14 @@
           "name": "markup.code.tsx.mdx",
           "patterns": [
             {
-              "include": "source.tsx"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.tsx",
+              "patterns": [
+                {
+                  "include": "source.tsx"
+                }
+              ]
             }
           ]
         }
@@ -5397,7 +5972,7 @@
     "commonmark-code-fenced-vbnet": {
       "patterns": [
         {
-          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:classic\\x2dvisual\\x2dbasic|fb|freebasic|realbasic|vb\\x2d\\.net|vb\\x2d6|vb\\.net|vb6|vbnet|vbscript|visual\\x2dbasic|visual\\x2dbasic\\x2d\\.net|visual\\x2dbasic\\x2d6|visual\\x2dbasic\\x2d6\\.0|visual\\x2dbasic\\x2dclassic|(?:.*\\.)?(?:bi|ctl|dsr|rbbas|rbfrm|rbmnu|rbres|rbtbar|rbuistate|vb|vbhtml|vbs)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(`{3,})(?:[\\t ]*((?i:fb|freebasic|realbasic|vb\\x2d\\.net|vb\\.net|vbnet|vbscript|visual\\x2dbasic|visual\\x2dbasic\\x2d\\.net|(?:.*\\.)?(?:bi|rbbas|rbfrm|rbmnu|rbres|rbtbar|rbuistate|vb|vbhtml|vbs)))(?:[\\t ]+((?:[^\\n\\r`])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -5418,8 +5993,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.vbnet",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5428,12 +6002,19 @@
           "name": "markup.code.vbnet.mdx",
           "patterns": [
             {
-              "include": "source.vbnet"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.vbnet",
+              "patterns": [
+                {
+                  "include": "source.vbnet"
+                }
+              ]
             }
           ]
         },
         {
-          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:classic\\x2dvisual\\x2dbasic|fb|freebasic|realbasic|vb\\x2d\\.net|vb\\x2d6|vb\\.net|vb6|vbnet|vbscript|visual\\x2dbasic|visual\\x2dbasic\\x2d\\.net|visual\\x2dbasic\\x2d6|visual\\x2dbasic\\x2d6\\.0|visual\\x2dbasic\\x2dclassic|(?:.*\\.)?(?:bi|ctl|dsr|rbbas|rbfrm|rbmnu|rbres|rbtbar|rbuistate|vb|vbhtml|vbs)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
+          "begin": "(?:^|\\G)[\\t ]*(~{3,})(?:[\\t ]*((?i:fb|freebasic|realbasic|vb\\x2d\\.net|vb\\.net|vbnet|vbscript|visual\\x2dbasic|visual\\x2dbasic\\x2d\\.net|(?:.*\\.)?(?:bi|rbbas|rbfrm|rbmnu|rbres|rbtbar|rbuistate|vb|vbhtml|vbs)))(?:[\\t ]+((?:[^\\n\\r])+))?)(?:[\\t ]*$)",
           "beginCaptures": {
             "1": {
               "name": "string.other.begin.code.fenced.mdx"
@@ -5454,8 +6035,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.vbnet",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5464,7 +6044,14 @@
           "name": "markup.code.vbnet.mdx",
           "patterns": [
             {
-              "include": "source.vbnet"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.vbnet",
+              "patterns": [
+                {
+                  "include": "source.vbnet"
+                }
+              ]
             }
           ]
         }
@@ -5494,8 +6081,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.xml",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5504,7 +6090,14 @@
           "name": "markup.code.xml.mdx",
           "patterns": [
             {
-              "include": "text.xml"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.xml",
+              "patterns": [
+                {
+                  "include": "text.xml"
+                }
+              ]
             }
           ]
         },
@@ -5530,8 +6123,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.xml",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5540,7 +6132,14 @@
           "name": "markup.code.xml.mdx",
           "patterns": [
             {
-              "include": "text.xml"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.xml",
+              "patterns": [
+                {
+                  "include": "text.xml"
+                }
+              ]
             }
           ]
         }
@@ -5570,8 +6169,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.yaml",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5580,7 +6178,14 @@
           "name": "markup.code.yaml.mdx",
           "patterns": [
             {
-              "include": "source.yaml"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.yaml",
+              "patterns": [
+                {
+                  "include": "source.yaml"
+                }
+              ]
             }
           ]
         },
@@ -5606,8 +6211,7 @@
               ]
             }
           },
-          "contentName": "meta.embedded.yaml",
-          "end": "(\\1)(?:[\\t ]*$)",
+          "end": "(?:^|\\G)[\\t ]*(\\1)(?:[\\t ]*$)",
           "endCaptures": {
             "1": {
               "name": "string.other.end.code.fenced.mdx"
@@ -5616,12 +6220,20 @@
           "name": "markup.code.yaml.mdx",
           "patterns": [
             {
-              "include": "source.yaml"
+              "begin": "(^|\\G)(\\s*)(.*)",
+              "while": "(^|\\G)(?![\\t ]*([`~]{3,})[\\t ]*$)",
+              "contentName": "meta.embedded.yaml",
+              "patterns": [
+                {
+                  "include": "source.yaml"
+                }
+              ]
             }
           ]
         }
       ]
     }
   },
-  "scopeName": "source.mdx"
+  "scopeName": "source.mdx",
+  "uuid": "fe65e2cd-7c73-4a27-8b5e-5902893626aa"
 }

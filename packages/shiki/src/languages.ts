@@ -97,6 +97,7 @@ export type Lang =
   | 'markdown' | 'md'
   | 'marko'
   | 'matlab'
+  | 'md-math-fence'
   | 'mdc'
   | 'mdx'
   | 'mermaid'
@@ -174,6 +175,10 @@ export type Lang =
   | 'wolfram' | 'wl'
   | 'xml'
   | 'xsl'
+  | 'yaml-1.0'
+  | 'yaml-1.1'
+  | 'yaml-1.2'
+  | 'yaml-1.3'
   | 'yaml' | 'yml'
   | 'zenscript'
   | 'zig'
@@ -353,7 +358,7 @@ export const languages: ILanguageRegistration[] = [
     path: 'cobol.tmLanguage.json',
     displayName: 'COBOL',
     samplePath: 'cobol.sample',
-    embeddedLangs: ['sql', 'html', 'java']
+    embeddedLangs: ['html', 'java']
   },
   {
     id: 'codeql',
@@ -809,7 +814,7 @@ export const languages: ILanguageRegistration[] = [
     path: 'latex.tmLanguage.json',
     displayName: 'LaTeX',
     samplePath: 'latex.sample',
-    embeddedLangs: ['tex', 'css', 'haskell', 'html', 'xml', 'java', 'lua', 'julia', 'ruby', 'javascript', 'typescript', 'python', 'yaml', 'rust', 'scala', 'gnuplot']
+    embeddedLangs: ['tex', 'shellscript', 'css', 'gnuplot', 'haskell', 'html', 'java', 'julia', 'javascript', 'lua', 'python', 'ruby', 'rust', 'typescript', 'xml', 'yaml', 'scala']
   },
   {
     id: 'less',
@@ -879,6 +884,12 @@ export const languages: ILanguageRegistration[] = [
     path: 'matlab.tmLanguage.json',
     displayName: 'MATLAB',
     samplePath: 'matlab.sample'
+  },
+  {
+    id: 'md-math-fence',
+    scopeName: 'markdown.math.codeblock',
+    path: 'md-math-fence.tmLanguage.json',
+    displayName: 'Md-math-fence'
   },
   {
     id: 'mdc',
@@ -1249,7 +1260,7 @@ export const languages: ILanguageRegistration[] = [
     id: 'sql',
     scopeName: 'source.sql',
     path: 'sql.tmLanguage.json',
-    displayName: 'SQL',
+    displayName: 'MS SQL',
     samplePath: 'sql.sample'
   },
   {
@@ -1407,7 +1418,7 @@ export const languages: ILanguageRegistration[] = [
     path: 'vue.tmLanguage.json',
     displayName: 'Vue',
     samplePath: 'vue.sample',
-    embeddedLangs: ['html', 'markdown', 'pug', 'stylus', 'sass', 'css', 'scss', 'less', 'javascript', 'typescript', 'jsx', 'tsx', 'json', 'jsonc', 'json5', 'yaml', 'toml', 'graphql']
+    embeddedLangs: ['html', 'markdown', 'pug', 'stylus', 'sass', 'css', 'scss', 'less', 'javascript', 'typescript', 'jsx', 'tsx', 'coffee', 'json', 'jsonc', 'json5', 'yaml', 'toml', 'graphql']
   },
   {
     id: 'vyper',
@@ -1462,6 +1473,34 @@ export const languages: ILanguageRegistration[] = [
     displayName: 'XSL',
     samplePath: 'xsl.sample',
     embeddedLangs: ['xml']
+  },
+  {
+    id: 'yaml-1.0',
+    scopeName: 'source.yaml.1.0',
+    path: 'yaml-1.0.tmLanguage.json',
+    displayName: 'YAML 1.0',
+    embeddedLangs: ['yaml-1.1', 'yaml-1.3', 'yaml-1.2', 'yaml']
+  },
+  {
+    id: 'yaml-1.1',
+    scopeName: 'source.yaml.1.1',
+    path: 'yaml-1.1.tmLanguage.json',
+    displayName: 'YAML 1.1',
+    embeddedLangs: ['yaml-1.3', 'yaml-1.2', 'yaml-1.0', 'yaml']
+  },
+  {
+    id: 'yaml-1.2',
+    scopeName: 'source.yaml.1.2',
+    path: 'yaml-1.2.tmLanguage.json',
+    displayName: 'YAML 1.2',
+    embeddedLangs: ['yaml-1.3', 'yaml-1.1', 'yaml-1.0', 'yaml']
+  },
+  {
+    id: 'yaml-1.3',
+    scopeName: 'source.yaml.1.3',
+    path: 'yaml-1.3.tmLanguage.json',
+    displayName: 'YAML 1.3',
+    embeddedLangs: ['yaml', 'yaml-1.2']
   },
   {
     id: 'yaml',
