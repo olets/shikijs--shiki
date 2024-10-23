@@ -69,8 +69,11 @@
     "dropdown.foreground": "#e0def4",
     "dropdown.listBackground": "#1f1d2e",
     "editor.background": "#191724",
-    "editor.findMatchBackground": "#6e6a8666",
+    "editor.findMatchBackground": "#f6c17733",
+    "editor.findMatchBorder": "#f6c17780",
+    "editor.findMatchForeground": "#e0def4",
     "editor.findMatchHighlightBackground": "#6e6a8666",
+    "editor.findMatchHighlightForeground": "#e0def4",
     "editor.findRangeHighlightBackground": "#6e6a8666",
     "editor.findRangeHighlightBorder": "#0000",
     "editor.focusedStackFrameHighlightBackground": "#6e6a8633",
@@ -134,7 +137,7 @@
     "editorGroupHeader.tabsBorder": "#0000",
     "editorGutter.addedBackground": "#9ccfd8",
     "editorGutter.background": "#191724",
-    "editorGutter.commentRangeForeground": "#908caa",
+    "editorGutter.commentRangeForeground": "#26233a",
     "editorGutter.deletedBackground": "#eb6f92",
     "editorGutter.foldingControlForeground": "#c4a7e7",
     "editorGutter.modifiedBackground": "#ebbcba",
@@ -168,6 +171,8 @@
     "editorOverviewRuler.background": "#191724",
     "editorOverviewRuler.border": "#6e6a8666",
     "editorOverviewRuler.bracketMatchForeground": "#908caa",
+    "editorOverviewRuler.commentForeground": "#908caa80",
+    "editorOverviewRuler.commentUnresolvedForeground": "#f6c17780",
     "editorOverviewRuler.commonContentForeground": "#6e6a861a",
     "editorOverviewRuler.currentContentForeground": "#6e6a8633",
     "editorOverviewRuler.deletedForeground": "#eb6f9280",
@@ -227,6 +232,7 @@
     "input.foreground": "#e0def4",
     "input.placeholderForeground": "#908caa",
     "inputOption.activeBackground": "#ebbcba26",
+    "inputOption.activeBorder": "#0000",
     "inputOption.activeForeground": "#ebbcba",
     "inputValidation.errorBackground": "#1f1d2e",
     "inputValidation.errorBorder": "#6e6a8666",
@@ -519,7 +525,7 @@
       }
     },
     {
-      "scope": ["keyword"],
+      "scope": ["keyword", "variable.language.this"],
       "settings": {
         "foreground": "#31748f"
       }

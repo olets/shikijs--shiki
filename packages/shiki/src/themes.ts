@@ -4,7 +4,9 @@ export type Theme =
   | 'dracula-soft'
   | 'dracula'
   | 'github-dark-dimmed'
+  | 'github-dark-high-contrast'
   | 'github-dark'
+  | 'github-light-high-contrast'
   | 'github-light'
   | 'light-plus'
   | 'material-theme-darker'
@@ -35,7 +37,9 @@ export const themes: Theme[] = [
   'dracula-soft',
   'dracula',
   'github-dark-dimmed',
+  'github-dark-high-contrast',
   'github-dark',
+  'github-light-high-contrast',
   'github-light',
   'light-plus',
   'material-theme-darker',
