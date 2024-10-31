@@ -326,17 +326,39 @@
             },
             {
               "comment": "(entity)",
-              "match": "^\\s*([\\w-]+)$",
-              "name": "variable"
+              "match": "(?i)^\\s*([\\w-]+)\\s*(\\[)?\\s*((?:[\\w-]+)|(?:\"[\\w\\s-]+\"))?\\s*(\\])?$",
+              "captures": {
+                "1": {
+                  "name": "variable"
+                },
+                "2": {
+                  "name": "keyword.control.mermaid"
+                },
+                "3": {
+                  "name": "string"
+                },
+                "4": {
+                  "name": "keyword.control.mermaid"
+                }
+              }
             },
             {
               "comment": "(entity) {",
-              "begin": "(?i)\\s+([\\w-]+)\\s*({)",
+              "begin": "(?i)\\s+([\\w-]+)\\s*(\\[)?\\s*((?:[\\w-]+)|(?:\"[\\w\\s-]+\"))?\\s*(\\])?\\s*({)",
               "beginCaptures": {
                 "1": {
                   "name": "variable"
                 },
                 "2": {
+                  "name": "keyword.control.mermaid"
+                },
+                "3": {
+                  "name": "string"
+                },
+                "4": {
+                  "name": "keyword.control.mermaid"
+                },
+                "5": {
                   "name": "keyword.control.mermaid"
                 }
               },
