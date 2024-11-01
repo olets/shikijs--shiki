@@ -960,7 +960,7 @@
     "tags-name": {
       "patterns": [
         {
-          "match": "(svelte)(:)([a-z][\\w0-9:-]*)",
+          "match": "(svelte)(:)([a-z][\\w:-]*)",
           "captures": {
             "1": {
               "name": "keyword.control.svelte"
@@ -978,8 +978,24 @@
           "name": "keyword.control.svelte"
         },
         {
-          "match": "[A-Z][a-zA-Z0-9_]*",
-          "name": "support.class.component.svelte"
+          "match": "([\\w]+(?:\\.[\\w]+)+)|([A-Z][\\w]+)",
+          "captures": {
+            "1": {
+              "patterns": [
+                {
+                  "match": "\\w+",
+                  "name": "support.class.component.svelte"
+                },
+                {
+                  "match": "\\.",
+                  "name": "punctuation.definition.keyword.svelte"
+                }
+              ]
+            },
+            "2": {
+              "name": "support.class.component.svelte"
+            }
+          }
         },
         {
           "match": "[a-z][\\w0-9:]*-[\\w0-9:-]*",
